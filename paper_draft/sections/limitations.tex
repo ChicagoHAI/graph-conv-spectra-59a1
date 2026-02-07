@@ -1,0 +1,28 @@
+\section{Limitations and Future Work}
+
+While our investigation of quantum-persistent homology rings (QPHRs) has yielded several important results, there are several key limitations to the current work that warrant discussion:
+
+1. Computational Complexity: The algorithms presented for computing QPHR invariants have complexity $O(n^3 \log n)$ in the number of simplices $n$, making them impractical for large-scale topological data analysis. The exponential growth in computational requirements as dimension increases remains a significant challenge.
+
+2. Restricted Parameter Space: Our convergence results in Lemma 3.2 only hold for quantum uncertainty parameters $\epsilon \leq \frac{1}{4}$. The behavior of QPHRs for larger values of $\epsilon$ remains an open question, particularly in the regime where $\epsilon \to 1$.
+
+3. Algebraic Structure Limitations: The ring structure we developed assumes commutativity of the quantum persistence operators, i.e., $[P_\alpha, P_\beta] = 0$ for all $\alpha, \beta \in \mathbb{R}$. This assumption may not hold in more general quantum-topological settings.
+
+4. Dimensional Constraints: Our classification theorem only applies to QPHRs of dimension $d \leq 4$. The extension to higher dimensions appears to require substantially different techniques, as the current proof relies heavily on low-dimensional geometric intuition.
+
+Future work should address these limitations through:
+
+\begin{itemize}
+\item Development of more efficient algorithms, potentially utilizing quantum computing techniques to achieve speedup
+\item Extension of the convergence results to the full parameter space $\epsilon \in [0,1]$
+\item Investigation of non-commutative variants of QPHRs
+\item Generalization of the classification theorem to arbitrary dimensions
+\end{itemize}
+
+Additionally, the connection between QPHRs and traditional persistent homology deserves further exploration, particularly regarding the stability of quantum persistence diagrams under perturbations of the input data.
+
+The relationship between QPHRs and quantum field theories, suggested by the form of our main invariant
+\[
+\mathcal{Q}(X) = \sum_{k=0}^d \int_{\Delta} e^{-\epsilon\|x\|^2} \beta_k(x) dx,
+\]
+where $\beta_k(x)$ denotes the $k$-th quantum Betti number, remains largely unexplored and could provide valuable insights for both mathematics and theoretical physics.

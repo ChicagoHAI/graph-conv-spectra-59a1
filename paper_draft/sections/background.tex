@@ -1,0 +1,45 @@
+\section{Background and Related Work}
+
+The automated discovery of novel mathematical research directions represents a convergence of multiple disciplines, including artificial intelligence, formal logic, and mathematical theory formation. This section reviews key developments in these areas and establishes the theoretical framework for our investigation.
+
+\subsection{Theoretical Foundations}
+
+The fundamental challenge of automated mathematical discovery lies in representing abstract mathematical structures in computationally tractable forms. Recent work by \cite{testolin2023neural} establishes baseline capabilities for neural architectures in arithmetic reasoning, providing essential building blocks for more sophisticated mathematical operations. This connects directly with \cite{pantsar2024theorem}'s framework for neural theorem proving, which introduces formal verification mechanisms for machine-generated mathematical claims.
+
+The spectral decomposition approach developed in \cite{mo2024autosgnn} provides crucial theoretical underpinning for our work, particularly in the representation of mathematical structures as learnable graph objects. Let $\mathcal{G} = (V,E)$ be a graph representing a mathematical structure, with associated Laplacian matrix $L$. The spectral decomposition:
+
+\[
+L = U\Lambda U^T = \sum_{i=1}^n \lambda_i u_i u_i^T
+\]
+
+enables the discovery of inherent patterns through eigenvalue analysis.
+
+\subsection{Pattern Discovery and Conjecture Generation}
+
+Building on classical automated theory formation principles \cite{pease2013automated}, modern approaches have incorporated deep learning techniques for mathematical pattern recognition. \cite{mishra2023mathematical} introduces a systematic framework for conjecture generation that combines:
+
+1. Symbolic pattern matching
+2. Statistical learning over mathematical objects
+3. Formal verification of generated conjectures
+
+This framework has been extended by \cite{saraeb2025artificial} specifically for number theory applications, demonstrating how language models can generate novel algorithmic approaches.
+
+\subsection{Computational Frameworks}
+
+The constitutive neural network architecture proposed by \cite{linka2022automated} and further developed in \cite{linka2022family} provides a powerful framework for automated model discovery. Given a mathematical domain $\Omega$ and associated feature space $\mathcal{F}$, the constitutive mapping $\Phi: \Omega \rightarrow \mathcal{F}$ is learned through:
+
+\[
+\Phi(x) = \arg\min_{\phi \in \mathcal{H}} \left\{ \sum_{i=1}^N L(y_i, \phi(x_i)) + \lambda R(\phi) \right\}
+\]
+
+where $\mathcal{H}$ is an appropriate function space and $R(\phi)$ is a regularization term.
+
+\subsection{Applications and Extensions}
+
+Recent applications demonstrate the breadth of automated mathematical discovery. \cite{gabidullina2025data} extends these principles to distributed systems, while \cite{castle2024embracing} explores educational applications. Pattern mining algorithms \cite{wang2020improved}, \cite{ding2022prefixpruningbased} provide complementary approaches for structure discovery.
+
+The integration of domain-specific knowledge has been demonstrated across various fields, including medical research \cite{yu2022data}, drug discovery \cite{hosseini2022deep}, and electronic systems \cite{shobanadevi2024automated}. These applications validate the generalizability of automated discovery frameworks while highlighting domain-specific challenges.
+
+Historical perspectives from \cite{jantke1989analogical} and \cite{l2001council} provide important context for the evolution of mathematical discovery methods. Notable extensions include work on classical problems like Fermat's Last Theorem \cite{dorca2021extension} and specialized mining algorithms \cite{pandey2017developing}, \cite{lee2019clustering}, \cite{ma2022analysis}, \cite{qashou2022mining}.
+
+This rich theoretical foundation, combined with recent advances in neural architectures and automated reasoning, provides the basis for our investigation into novel mathematical research topic generation. Our work builds particularly on the conjecture generation framework of \cite{mishra2023mathematical} while incorporating the spectral analysis techniques of \cite{mo2024autosgnn}.
